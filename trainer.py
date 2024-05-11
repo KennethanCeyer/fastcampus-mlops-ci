@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from ml_models.xor import XORModel
 
+from ml_models.xor import XORModel
 
 if __name__ == "__main__":
     X = torch.tensor([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=torch.float32)

@@ -1,7 +1,8 @@
-from fastapi.testclient import TestClient
-from unittest.mock import patch, MagicMock
-import torch
+from unittest.mock import MagicMock, patch
+
 import pytest
+import torch
+from fastapi.testclient import TestClient
 
 
 def test_predict(mock_client: TestClient, mock_model: MagicMock):

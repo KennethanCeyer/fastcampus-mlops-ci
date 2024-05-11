@@ -30,6 +30,7 @@ fastcampus-mlops-ci/
 
 ```bash
 pip3 install -r requirements.txt
+pip3 install -q black isort mypy pytest pytest-cov
 ```
 
 ## 테스트

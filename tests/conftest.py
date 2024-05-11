@@ -1,13 +1,14 @@
+from typing import Generator
+from unittest.mock import MagicMock, patch
+
 import pytest
 from fastapi.testclient import TestClient
-from unittest.mock import patch, MagicMock
-from typing import Generator
+
 from app import app
-import torch
 
 
 @pytest.fixture(scope="module")
-def mock_client() -> TestClient:
+def mock_client() -> Generator[TestClient, None, None]:
     with TestClient(app) as client:
         yield client
 
