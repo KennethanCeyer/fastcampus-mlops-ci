@@ -43,5 +43,5 @@ jobs:
       - name: Run tests with Pytest
         run: pytest tests/
 
-    - name: Check code coverage with pytest-cov
-      run: pytest --cov=. --cov-report=term-missing --cov-fail-under=70 tests/
+      - name: Check code coverage with pytest-cov
+        run: pytest --cov=. --cov-report=term-missing --cov-fail-under=70 tests/
