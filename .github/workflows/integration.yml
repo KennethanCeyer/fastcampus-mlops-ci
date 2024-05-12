@@ -40,6 +40,9 @@ jobs:
       - name: Type Checking with Mypy
         run: mypy .
 
+      - name: Train model for testing
+        run: python trainer.py
+
       - name: Run tests with Pytest
         run: pytest tests/
 
